@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/oplax/"
+     xml:base="https://w3id.org/oplax/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oplax="https://w3id.org/oplax/">
+    <owl:Ontology rdf:about="https://w3id.org/oplax/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/oplax/componentOfPattern -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/componentOfPattern">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedPattern"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Pattern"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/derivedFromModule -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/derivedFromModule">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedModule"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Module"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Module"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/derivedFromPattern -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/derivedFromPattern">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedPattern"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Pattern"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/description -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/extractedFrom -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/extractedFrom">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/generalizationOfConceptualComponent -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/generalizationOfConceptualComponent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedConceptualComponent"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/ConceptualComponent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/ConceptualComponent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/generalizationOfModule -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/generalizationOfModule">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedModule"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Module"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Module"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/generalizationOfPattern -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/generalizationOfPattern">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedPattern"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Pattern"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/hasCompetencyQuestion -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/hasCompetencyQuestion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/hasDomain -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/hasDomain">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Domain"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/hasRelatedConceptualComponent -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/hasRelatedConceptualComponent">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/ConceptualComponent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/ConceptualComponent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/hasRelatedModule -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/hasRelatedModule">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Module"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Module"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/hasRelatedPattern -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/hasRelatedPattern">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Pattern"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/implementsConceptualComponent -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/implementsConceptualComponent">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/ConceptualComponent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Pattern"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/isMemberOfPatternInstance -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/isMemberOfPatternInstance">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/PatternInstance"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/OntologicalEntity"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/isModuleNativeTo -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/isModuleNativeTo">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Module"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/isOntologicalEntityNativeTo -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/isOntologicalEntityNativeTo">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/OntologicalEntity"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/isPatternInstanceOf -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/isPatternInstanceOf">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/PatternInstance"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/name -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/ofExternalType -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/ofExternalType"/>
+    
+
+
+    <!-- https://w3id.org/oplax/reengineeredFrom -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/reengineeredFrom">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/reusesAsTemplate -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/reusesAsTemplate">
+        <rdfs:range rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/specializationOfConceptualComponent -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/specializationOfConceptualComponent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedConceptualComponent"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/ConceptualComponent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/ConceptualComponent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/specializationOfModule -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/specializationOfModule">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedModule"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Module"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Module"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/oplax/specializationOfPattern -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/oplax/specializationOfPattern">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/oplax/hasRelatedPattern"/>
+        <rdfs:range rdf:resource="https://w3id.org/oplax/Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/oplax/Pattern"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/oplax/Axiom -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Axiom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oplax/OntologicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oplax/Class -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Class">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oplax/OntologicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oplax/ConceptualComponent -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/ConceptualComponent"/>
+    
+
+
+    <!-- https://w3id.org/oplax/Domain -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Domain"/>
+    
+
+
+    <!-- https://w3id.org/oplax/Individual -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Individual">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oplax/OntologicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oplax/Module -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Module">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oplax/OntologicalCollection -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/OntologicalCollection"/>
+    
+
+
+    <!-- https://w3id.org/oplax/OntologicalEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/OntologicalEntity"/>
+    
+
+
+    <!-- https://w3id.org/oplax/Ontology -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Ontology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oplax/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Pattern">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oplax/OntologicalCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oplax/PatternInstance -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/PatternInstance"/>
+    
+
+
+    <!-- https://w3id.org/oplax/Property -->
+
+    <owl:Class rdf:about="https://w3id.org/oplax/Property">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/oplax/OntologicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/oplax/externalClass -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/oplax/externalClass"/>
+    
+
+
+    <!-- https://w3id.org/oplax/externalIndividual -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/oplax/externalIndividual"/>
+    
+
+
+    <!-- https://w3id.org/oplax/externalPattern -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/oplax/externalPattern"/>
+    
+
+
+    <!-- https://w3id.org/oplax/externalProperty -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/oplax/externalProperty"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
