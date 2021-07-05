@@ -208,24 +208,13 @@
     
 
 
-    <!-- https://w3id.org/OPLaX/isModuleNativeTo -->
+    <!-- https://w3id.org/OPLaX/isNativeTo -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/OPLaX/isModuleNativeTo">
-        <rdfs:comment xml:lang="en">This property relates a Module to an Ontological Collection it is native to.</rdfs:comment>
-        <rdfs:label xml:lang="en">is module native to</rdfs:label>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/OPLaX/isNativeTo">
+        <rdfs:comment xml:lang="en">This property relates an Ontological Entity or a Module to an Ontological Collection it is native to.</rdfs:comment>
+        <rdfs:label xml:lang="en">is native to</rdfs:label>
         <rdfs:range rdf:resource="https://w3id.org/OPLaX/OntologicalCollection"/>
-        <rdfs:domain rdf:resource="https://w3id.org/OPLaX/Module"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- https://w3id.org/OPLaX/isOntologicalEntityNativeTo -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/OPLaX/isOntologicalEntityNativeTo">
-        <rdfs:comment xml:lang="en">This property relates an Ontological Entity to an Ontological Collection it is native to.</rdfs:comment>
-        <rdfs:label xml:lang="en">is ontological entity native to</rdfs:label>
-        <rdfs:range rdf:resource="https://w3id.org/OPLaX/OntologicalCollection"/>
-        <rdfs:domain rdf:resource="https://w3id.org/OPLaX/OntologicalEntity"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:AnnotationProperty>
     
 
