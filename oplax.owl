@@ -57,6 +57,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/OPLaX/hasRelatedModule"/>
         <rdfs:range rdf:resource="https://w3id.org/OPLaX/Module"/>
         <rdfs:domain rdf:resource="https://w3id.org/OPLaX/Module"/>
+        <owl:equivalentProperty rdf:resource="http://ontologydesignpatterns.org/opla-core/derivedFromModule"/>
     </owl:AnnotationProperty>
     
 
