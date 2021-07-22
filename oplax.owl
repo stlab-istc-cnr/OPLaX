@@ -15,7 +15,7 @@
         <dc:creator>Valentina Presutti</dc:creator>
         <rdfs:comment xml:lang="en">This is the extended version of the OPLa ontology, which includes: (i) annotation properties from the original OPLa ontology (Pascal Hitzler et al., Towards a simple but useful Ontology Design Pattern Representation Language, WOP 2017 - https://github.com/cogan-shimizu/Extended-OPLa/blob/master/oplacore.owl); (ii) annotation properties from the Content Pattern annotation schema (http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl) used in the ODP Portal (http://www.ontologydesignpatterns.org/); (iii) additional annotation properties for addressing the instance level (an instance of a pattern) and the conceptual component level (an abstract conceptual component grouping different patterns addressing it).</rdfs:comment>
         <rdfs:label xml:lang="en">OPLaX (Ontology Pattern Language eXtended) ontology</rdfs:label>
-        <owl:versionInfo xml:lang="en">0.0.1</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">0.0.2</owl:versionInfo>
     </owl:Ontology>
     
 
