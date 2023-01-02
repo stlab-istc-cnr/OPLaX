@@ -273,7 +273,7 @@
     <!-- https://w3id.org/OPLaX/isNativeTo -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/OPLaX/isNativeTo">
-        <rdfs:comment xml:lang="en">This property relates an Ontological Entity or a Module to an Ontological Collection it is native to.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates an Ontological Entity or a Module to an Ontological Collection it is native to, i.e. it relates an Ontological Entity or a Module to the Ontological Collection where it was defined, and of which it is a core element.</rdfs:comment>
         <rdfs:label xml:lang="en">is native to</rdfs:label>
         <rdfs:range rdf:resource="https://w3id.org/OPLaX/OntologicalCollection"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
